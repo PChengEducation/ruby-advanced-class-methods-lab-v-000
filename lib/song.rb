@@ -47,11 +47,16 @@ def self.alphabetical
   self.all.sort_by {|x| x.name}
 end
 
-def self.new_from_filename(name_with_format)
+def self.new_from_filename(song_with_format)
   @song = self.new
-  @song.artist_name = name_with_format.split(/[^a-zA-Z\s]|\s-\s/)[0]
-  @song.name = name_with_format.split(/[^a-zA-Z\s]|\s-\s/)[1]
+  @song.artist_name = song_with_format.split(/[^a-zA-Z\s]|\s-\s/)[0]
+  @song.name = song_with_format.split(/[^a-zA-Z\s]|\s-\s/)[1]
   @song
 end
+
+def self.create_from_filename(song_with_format)
+  @song = self.new_from_file(song_with_format)
+  @song.saved
+  @song
 
 end #end of the Song class
