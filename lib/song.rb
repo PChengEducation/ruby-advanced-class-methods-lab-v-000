@@ -55,8 +55,8 @@ def self.new_from_filename(song_with_format)
 end
 
 def self.create_from_filename(song_with_format)
-  self.new_from_file(song_with_format)
-  @song.saved
+  self.new_from_filename(song_with_format)
+  @song.save
   @song
 end
 
