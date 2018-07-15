@@ -58,5 +58,6 @@ def self.create_from_filename(song_with_format)
   @song = self.new_from_file(song_with_format)
   @song.saved
   @song
+end
 
 end #end of the Song class
