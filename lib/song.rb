@@ -51,6 +51,7 @@ def self.new_from_filename(name_with_format)
   @song = self.new
   @song.artist_name = name_with_format.split(/[^a-zA-Z\s]|\s-\s/)[0]
   @song.name = name_with_format.split(/[^a-zA-Z\s]|\s-\s/)[1]
+  @song
 end
 
 end #end of the Song class
