@@ -60,4 +60,8 @@ def self.create_from_filename(song_with_format)
   @song
 end
 
+def self.destroy_all
+  @@all.clear
+end
+
 end #end of the Song class
