@@ -29,4 +29,8 @@ def self.create_by_name (string_name)
 @new_song
 end
 
+def self.find_or_create_by_name
+
+end
+
 end #end of the Song class
