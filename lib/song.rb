@@ -30,8 +30,7 @@ def self.create_by_name (string_name)
 end
 
 def self.find_by_name(string_name)
-  @new_song.name = string_name
-  @new_song
+  self.all.detect {|i| i.name == string_name}
 
 end
 
