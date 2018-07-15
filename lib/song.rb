@@ -43,4 +43,10 @@ def self.find_or_create_by_name (find_a_song)
     end
 end
 
+def self.alphabetical
+
+  self.all.sort
+  
+end
+
 end #end of the Song class
