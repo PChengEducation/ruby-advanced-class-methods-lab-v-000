@@ -18,7 +18,7 @@ end
 
 def self.new_by_name
   @new_song = self.new
-  @new_song = string_name
+  @new_song.new = string_name
   @new_song.save
   @new_song
 
