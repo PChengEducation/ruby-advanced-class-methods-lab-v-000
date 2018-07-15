@@ -44,10 +44,7 @@ def self.find_or_create_by_name (find_a_song)
 end
 
 def self.alphabetical
-  sort_song = []
-  sort_song = self.all.sort
-  sort_song
-
+  self.all.sort_by {|x| x.name}
 end
 
 end #end of the Song class
