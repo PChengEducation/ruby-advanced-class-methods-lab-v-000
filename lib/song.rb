@@ -26,7 +26,7 @@ def self.create_by_name (string_name)
 @new_song = self.new
 @new_song.name = string_name
 
-@@all << self
+self.class.all << self
 @new_song
 end
 
