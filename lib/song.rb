@@ -46,7 +46,7 @@ end
 def self.alphabetical
 
   self.all.sort
-  
+
 end
 
 end #end of the Song class
