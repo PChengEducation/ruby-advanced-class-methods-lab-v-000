@@ -16,7 +16,7 @@ def self.create
   @new_song
 end
 
-def self.new_by_name
+def self.new_by_name (string_name)
   @new_song = self.new
   @new_song.new = string_name
   @new_song.save
